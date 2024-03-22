@@ -166,7 +166,6 @@ export default function LargeTitle( { children } ) {
                     }),
                 },
                 ]}
-                shouldOpenOnLongPress={true}
                 themeVariant={themeVariant}
             >
                 <View style={styles.button}>
@@ -184,9 +183,6 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     button: {
-      height: 100,
-      width: 100,
-      backgroundColor: 'red',
       borderRadius: 50,
       justifyContent: 'center',
       alignItems: 'center',
