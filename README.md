@@ -16,11 +16,15 @@ Windows只有安卓就没办法了
 
 具体方法可以参考下面的链接，做到“Creating a new application”之前就行了。
 
-[For Mac + iOS](https://reactnative.dev/docs/environment-setup?package-manager=npm&guide=native&platform=ios&os=macos)
+#### [For Mac + iOS](https://reactnative.dev/docs/environment-setup?package-manager=npm&guide=native&platform=ios&os=macos)
 
+系统需要更新到 macOS 14 Sonoma 以上版本，Xcode初次启动后，选择安装iOS 17.4 SDK
 
-[For Windows + Android](https://reactnative.dev/docs/environment-setup?package-manager=npm&guide=native&platform=android&os=windows)
+#### [For Windows + Android](https://reactnative.dev/docs/environment-setup?package-manager=npm&guide=native&platform=android&os=windows)
 
+应该还要在Android Studio里创建一个虚拟机：
+
+![alt text](./assets/readme/a-emu.png)
 
 ### 剩余部分
 
@@ -42,28 +46,45 @@ yarn
 
 进入仓库目录后：
 
+#### 移动端编译并运行
+
+**iOS：**
+
+```
+yarn expo run:ios
+```
+
+**Android:**
+
+```
+yarn expo run:android
+```
+编译完成后就会启动模拟器了
+
+![alt text](assets/readme/emulator.png)
+
+如果你有一部安卓手机，你也可以在releases里面下载一个[测试包apk](https://github.com/Tonymiugrey/Vaccine-Tracker/releases/download/v0.1/app-debug.apk)
+
+！如果之后有引入一些新的东西，可能要重新编译apk之后才能继续测试，具体可以参考[这个网页](https://expo.nodejs.cn/guides/local-app-development/)
+
+(iPhone的话比较麻烦，想玩玩的话线下可以帮你弄弄，或者我之后看看开个TestFlight)
+
+#### web段与移动端后续
+
 ```
 yarn start
 ```
 
 ![alt text](assets/readme/expo.png)
 
+如果你想在web端上看效果，按w，但可能会有一些东西不能按预期运行（比如之后用于切换身份的那个菜单）
+
 如果你想在Android模拟器上测试，按a；如果你想在iOS模拟器上测试，按i
 
-![alt text](assets/readme/emulator.png)
-
-如果你想现在web端上看效果，按w，但可能会有一些东西不能按预期运行（比如之后用于切换身份的那个菜单）
-
-如果你有一部安卓手机，你也可以在releases里面下载一个[apk](https://github.com/Tonymiugrey/Vaccine-Tracker/releases/download/v0.1/app-debug.apk)
-
-当手机和电脑处于同一wifi下时，可以扫码后进入app测试
+当手机上安装了测试包，并与电脑处于同一wifi下时，可以扫码后进入app测试
 
 ![alt text](assets/readme/scan.png) 
 ![alt text](assets/readme/android.png)
-
-！如果之后有引入一些新的东西，可能要重新编译apk之后才能继续测试，具体可以参考[这个网页](https://expo.nodejs.cn/guides/local-app-development/)
-
-(iPhone的话比较麻烦，想玩玩的话线下可以帮你弄弄，或者我之后看看开个TestFlight)
 
 ## 需要用到的一些链接
 ### Tamagui

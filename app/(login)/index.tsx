@@ -26,7 +26,7 @@ export default function UsernameScreen() {
     <YStack flex={1} bg={Green.bg}>
       <YStack marginTop={90} marginLeft={20}>
         <YStack>
-          <Text style={ {fontWeight: 500, fontSize:32} } color={Green.dark}>Welcome to</Text>
+          <Text style={ {fontWeight: '200', fontSize:32} } color={Green.dark}>Welcome to</Text>
           <Text style={ {fontWeight: 'bold', fontSize:48} } color={Green.dark}>Project Name</Text>
         </YStack>
 
