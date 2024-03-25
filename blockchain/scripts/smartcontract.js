@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
-import Web3 from 'web3';
-import UserIdentityBuild from '../blockchain/build/contracts/UserIdentity.json';
+import Web3 from 'web3-react-native';
+import UserIdentityBuild from '../build/contracts/UserIdentity.json';
 
 // Create context and set default values.
 const SmartContractContext = createContext({});
